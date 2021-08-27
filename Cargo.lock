@@ -29,12 +29,6 @@ version = "0.1.0"
 source = "git+https://github.com/fortelabsinc/utils?rev=1354e0bcd3d4b818ca9c1c889f9be60978395e37#1354e0bcd3d4b818ca9c1c889f9be60978395e37"
 
 [[package]]
-name = "base64ct"
-version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8a32fd6af2b5827bce66c29053ba0e7c42b9dcab01835835058558c10851a46b"
-
-[[package]]
 name = "bcrypt-pbkdf"
 version = "0.4.0"
 dependencies = [
@@ -268,11 +262,10 @@ checksum = "624a8340c38c1b80fd549087862da4ba43e08858af025b236e509b6649fc13d5"
 
 [[package]]
 name = "password-hash"
-version = "0.1.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "54986aa4bfc9b98c6a5f40184223658d187159d7b3c6af33f2b2aa25ae1db0fa"
+version = "0.1.0"
+source = "git+https://github.com/fortelabsinc/traits?rev=929f5c96fa782b3d5514abdc29fe0f68663bf8b6#929f5c96fa782b3d5514abdc29fe0f68663bf8b6"
 dependencies = [
- "base64ct 1.0.1",
+ "base64ct",
  "rand_core",
 ]
 
@@ -280,7 +273,7 @@ dependencies = [
 name = "pbkdf2"
 version = "0.7.0"
 dependencies = [
- "base64ct 0.1.0",
+ "base64ct",
  "crypto-mac 0.10.0",
  "hex-literal",
  "hmac",

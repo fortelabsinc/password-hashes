@@ -17,7 +17,7 @@ crypto-mac = { git = "https://github.com/fortelabsinc/traits", rev="ca0ea3064459
 rayon = { version = "1", optional = true }
 base64ct = { git = "https://github.com/fortelabsinc/utils", rev="1354e0bcd3d4b818ca9c1c889f9be60978395e37", default-features = false, features = ["alloc"], optional = true  }
 hmac = { git = "https://github.com/fortelabsinc/MACs", rev="2f03bfabc56cfc6c2739acb9659fb3b8e0d3ac0e", default-features = false, optional = true }
-password-hash = { version = "0.1", default-features = false, features = ["alloc"], optional = true }
+password-hash = { git = "https://github.com/fortelabsinc/traits", rev="929f5c96fa782b3d5514abdc29fe0f68663bf8b6", default-features = false, features = ["alloc"], optional = true }
 sha1 = { version = "0.9", package = "sha-1", default-features = false, optional = true }
 sha2 = { version = "0.9", default-features = false, optional = true }
 

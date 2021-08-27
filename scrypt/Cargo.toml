@@ -11,8 +11,8 @@ categories = ["cryptography"]
 
 [dependencies]
 sha2 = { version = "0.8", default-features = false }
-pbkdf2 = { version = "0.3", default-features = false }
-hmac = "0.7"
+pbkdf2 = { git = "https://github.com/fortelabsinc/password-hashes", rev="1109c9810c492cb15a6da31a6a5a50de026d759a", default-features = false }
+hmac = { git = "https://github.com/fortelabsinc/MACs", rev="5d5702ab28f1882db6803cc4f5d91cd442f07267" }
 byte-tools = "0.3"
 byteorder = { version = "1", default-features = false }
 
